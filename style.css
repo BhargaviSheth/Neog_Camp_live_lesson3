@@ -9,6 +9,10 @@ body{
 
 }
 
+hr{
+  margin: 2rem 0rem;
+}
+
 /**container**/
 .container{
   padding : 0rem 1rem;
@@ -37,3 +41,11 @@ body{
   border: 1px solid var(--primary-color);
 }
 
+/**list**/
+.list-non-bullet{
+  list-style: none;
+}
+.list-iem-inline{
+  display: inline;
+  padding: 0rem 0.5rem;
+}
