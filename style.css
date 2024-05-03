@@ -2,6 +2,7 @@
 
 :root{
  --primary-color: #06b6d4;
+ --off-white:#e2e8f0;
  --dark-gray: #64748b
 }
 
@@ -88,4 +89,17 @@ hr{
   padding-top: 1rem;
  color: var(--dark-gray);
  text-align: center;
+}
+
+/**section**/
+
+.section{
+  padding: 2rem;
+}
+.section  h1{
+  text-align: center;
+}
+
+.ow{
+  background-color: var(--off-white);
 }
