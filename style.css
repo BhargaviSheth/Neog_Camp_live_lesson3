@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+
 
 :root{
  --primary-color: #06b6d4;
  --off-white:#e2e8f0;
- --dark-gray: #64748b
+ --dark-gray: #64748b;
+
+ --border-radius: 5px;
+  --box-shadow: 5px 5px 20px 2px #b8b8b891;
+
+
+ --poppins: "Poppins", sans-serif;
+  --sacramento: "Sacramento", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins);
 }
 
 body{
@@ -17,14 +33,14 @@ hr{
 }
 
 /**container**/
-.container{
+/* .container{
   padding : 0rem 1rem;
 
 }
 .container-center{
   max-width: 600px;
  margin: auto;
-}
+} */
 
 /**links**/
 
@@ -53,26 +69,37 @@ hr{
 }
 .list-item-inline{
   display: inline;
-  padding: 0rem 0.5rem;
+  margin: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  /* padding: 0rem 0.7rem; */
 }
 /**navigation**/
 .navigation{
-  background-color: var(--primary-color);
-  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--off-white);
   padding: 1rem;
   border-bottom-left-radius: 1rem;
 }
 
-.navigation .nav-brand{
+/* .navigation .nav-brand{
   font-weight: bold;
   font-size: 1.1rem;
-}
+} */
 
 .navigation .nav-pills{
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 .navigation .link{
-  color: white;
+  color: var(--primary-color);
 }
 .navigation .link-active{
   font-weight: bolder;
@@ -80,20 +107,36 @@ hr{
 
 /**header**/
 .hero{
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 4rem;
+}
+
+.hero .text{
+ /* flex: 10% */
+}
+
+.hero .name{
+  font-size: 4.5rem;
+  color: var(--blue);
+  font-family: var(--sacramento);
+  text-shadow: 2px 2px var(--light-blue);
+}
+
+.designation {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--light-blue);
 }
 
 .hero .hero-img{
+  float: right;
   max-width: 350px;
-  display: block;
   margin: auto;
 }
 
-.hero .hero-heading{
-  padding-top: 1rem;
- color: var(--dark-gray);
- text-align: center;
-}
+
+
 
 /**section**/
 
