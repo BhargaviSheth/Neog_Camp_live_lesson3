@@ -250,16 +250,51 @@ hr{
   color: var(--dark-gray);
 }
 
-.section{
-  padding: 2rem;
+.about-section .title,
+.skill-section .title,
+.project-section .title,
+.blog-section .title,
+.project-section-home .title,
+.blog-section-home .title {
+  color: var(--primary-color);
 }
+
+.project-home{
+  display: flex;
+  align-items: stretch;
+  font-size: 2rem;
+  font-family: var(--sacramento);
+  color: var(--dark-gray);
+  box-shadow: var(--box-shadow);
+  border-right: 4px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
+  border-left: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  margin: auto;
+  padding: 1rem;
+  width: fit-content;
+}
+.project-section-home .title{
+  margin: 0.3rem;
+}
+.home-content{
+  font-size: 1rem;
+  text-align: justify;
+  color: var(--dark-gray);
+}
+
+/* .project-section{ padding: 2rem;} */
+
+ 
+
 .section  h1{
   text-align: center;
 }
 
 .ow{
   background-color: var(--off-white);
-}
+} */
 
 /**footer**/
 
